@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Open Space</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script type="text/javascript" src="assets/js/app.js"></script>
+</head>
+<body>
+    <div class="space">
+        <div class="planet-area">
+            <img src="https://stepik.org/media/attachments/lesson/452681/mars.png" alt="Planeta Marte" class="planet">
+            <img src="https://stepik.org/media/attachments/lesson/452681/rocket.png" alt="Rocket A" id="rocket" class="rocket">
+        </div>
+        <div class="control-panel">
+            <div class="control-panel__inner">
+                <input type="password" class="password" id="password" placeholder="Enter password to unlock">
+                <input type="button" class="btnOk" value="ok" id="btnOk" onclick="checkPass()">
+                <div class="check-buttons">
+                    <input type="checkbox" name="check-buttons" class="checkLevel" disabled>
+                    <input type="checkbox" name="check-buttons" class="checkLevel" disabled>
+                    <input type="checkbox" name="check-buttons" class="checkLevel" disabled>
+                    <input type="checkbox" name="check-buttons" class="checkLevel" disabled>
+                    <input type="checkbox" name="check-buttons" class="checkLevel" disabled>
+                    <input type="checkbox" name="check-buttons" class="checkLevel" disabled>
+                </div>
+                <div class="levers">
+                    <input type="range" name="levers" min="1" max="100" value="50" class="lever" disabled>
+                    <input type="range" name="levers" min="1" max="100" value="50" class="lever" disabled>
+                    <input type="range" name="levers" min="1" max="100" value="50" class="lever" disabled>
+                    <input type="range" name="levers" min="1" max="100" value="50" class="lever" disabled>
+                    <input type="range" name="levers" min="1" max="100" value="50" class="lever" disabled>
+                </div>
+                <input type="button" class="btnLaunch" value="launch" id="launch" disabled>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

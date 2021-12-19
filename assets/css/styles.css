@@ -1,0 +1,139 @@
+body {
+    background: #000000;
+}
+
+.space {
+    background: url('https://stepik.org/media/attachments/lesson/452681/space.png') center no-repeat;
+    width: 626px;
+    height: 438px;
+    position: relative;
+    left: calc(50% - 313px);
+}
+
+.space .planet-area {
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.space .planet-area .planet {
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    z-index: 3;
+}
+.space .planet-area .rocket {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    left: calc(50% + 5px);
+    top: 50px;
+    transform: rotate(25deg);
+    z-index: 2;
+}
+
+.space .control-panel {
+    position: absolute;
+    width: calc(50% - 30px);
+    height: auto;
+    left: calc(50% - 15px);
+    top: calc(30% - 15px);
+    text-align: center;
+    padding: 15px 15px 15px 15px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-evenly;*/
+    align-items: center;
+    align-self: center;
+    background:
+            radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.15) 30%, rgba(255,255,255,.3) 32%, rgba(255,255,255,0) 33%) 0 0,
+            radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.1) 11%, rgba(255,255,255,.3) 13%, rgba(255,255,255,0) 14%) 0 0,
+            radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.2) 17%, rgba(255,255,255,.43) 19%, rgba(255,255,255,0) 20%) 0 110px,
+            radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.2) 11%, rgba(255,255,255,.4) 13%, rgba(255,255,255,0) 14%) -130px -170px,
+            radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.2) 11%, rgba(255,255,255,.4) 13%, rgba(255,255,255,0) 14%) 130px 370px,
+            radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.1) 11%, rgba(255,255,255,.2) 13%, rgba(255,255,255,0) 14%) 0 0,
+            linear-gradient(45deg, #343702 0%, #184500 20%, #187546 30%, #006782 40%, #0b1284 50%, #760ea1 60%, #83096e 70%, #840b2a 80%, #b13e12 90%, #e27412 100%);
+    background-size: 470px 470px, 970px 970px, 410px 410px, 610px 610px, 530px 530px, 730px 730px, 100% 100%;
+    background-color: #840b2a;
+    box-shadow: 5px 5px 15px aqua, 0 0 20px magenta, 0 0 60px midnightblue inset;
+}
+    .space .control-panel .control-panel__inner {
+        width: calc(100% - 30px);
+        height: 100%;
+        position: relative;
+        background-color: midnightblue;
+        padding: 15px 15px 15px 15px;
+        border-radius: 15px;
+    }
+        .space .control-panel .control-panel__inner .password {
+            border-radius: 13px;
+            width: 50%;
+            height: 30px;
+            border: 3px solid orange;
+            color: #760ea1;
+            background-color: #66cc66;
+            font-weight: bold;
+            padding: 0 15px;
+        }
+        .space .control-panel .control-panel__inner .btnOk {
+            width: 20%;
+            border-radius: 13px;
+            height: 36px;
+            border: 3px solid orange;
+            background: yellow;
+            font-weight: bold;
+        }
+        .space .control-panel .control-panel__inner .btnOk:hover {
+            cursor: pointer;
+        }
+
+        .space .control-panel .control-panel__inner .check-buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 100%;
+            padding: 5px 0 0 0;
+        }
+            .space .control-panel .control-panel__inner .check-buttons .checkLevel {
+                -webkit-appearance: none;
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+                border-radius: 7px;
+                border: 3px solid magenta;
+                background: rgba(255, 255, 0, .5);
+            }
+            .space .control-panel .control-panel__inner .check-buttons .checkLevel:checked {
+                background: red;
+                border: 3px solid magenta;
+            }
+
+        .space .control-panel .control-panel__inner .levers {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 100%;
+            max-width: 100%;
+            padding: 0 0 5px 0;
+        }
+            .space .control-panel .control-panel__inner .levers .lever {
+                /*transform: rotate(270deg);*/
+                width: 20px;
+                -webkit-appearance: slider-vertical;
+                border: 3px solid orange;
+                height: 70px;
+            }
+        .space .control-panel .control-panel__inner .btnLaunch {
+            width: 30%;
+            height: 30px;
+            border-radius: 10px;
+            border: 3px solid orange;
+            background: magenta;
+            color: white;
+            font-weight: bold;
+        }
+        .space .control-panel .control-panel__inner .btnLaunch:hover {
+            cursor: pointer;
+        }
